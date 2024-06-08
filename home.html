@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/feaaf8de4f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Countries</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Where in the world?</h1>
+            <div class="theme-container">
+                <i class="fa-regular fa-moon" id="toggle-theme"></i>
+                <p>Dark Mode</p>
+            </div>
+        </div>
+    </header>
+    <section class="options-section">
+        <div class="container">
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" name="country" placeholder="Search for a country...">
+            </div>
+            <select name="filter" id="filter" class="filter">
+                <option value="" selected hidden>Filter by region</option>
+            </select>
+        </div>
+    </section>
+    <main class="country-container">
+        <div class="container">
+            
+        </div>
+    </main>
+    <div id="loader-overlay" class="loader-overlay">
+        <div class="loader"></div>
+    </div>
+    <script src="scripts/home.js"></script>
+</body>
+</html>
